@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JOSH</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="public/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                $( ".figure-img" ).on('click', function(event) {
+                    console.log("clicked img ");
+                    var target = event.target;
+                    console.log(target.id);
+                    var target_html = $("#article"+target.id).html();
+                    $("#main").html(target_html);
+                });
+            });
+        </script>
+    </head>
+    <body>
+    <header>
+        <img src="public/banner1.jpg" />
+        <nav>
+            <ul>
+                <li><a href="#">Home <span>summary & contact</span></a></li>
+                <li><a href="#">Badges <span>spread the word </span></a></li>
+                <li><a href="#">Events <span>events info</span></a></li>
+                <li><a href="#">Schedule <span>events & time table</span></a></li>
+                <li><a href="#">Map to Venue <span>Map to Venue</span></a></li>
+                <li><a href="#">Photos <span>flickr</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <article class="main-article">
+            <img src="public/apple.jpg" />
+        </article>
+        <aside class="main-aside">
+            The apple is the pomaceous fruit of the apple tree, Malus domestica of the rose family (Rosaceae).
+            It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on deciduous trees which are large if grown from seed, but small if grafted onto roots (rootstock). The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded as part of research on disease control and selective breeding in apple production.
+        </aside>
+    </main>
+    <section class="hidden" id="article1">
+        <article class="main-article">
+            <img src="public/apple.jpg" />
+        </article>
+        <aside class="main-aside">
+            The apple is the pomaceous fruit of the apple tree, Malus domestica of the rose family (Rosaceae).
+            It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on deciduous trees which are large if grown from seed, but small if grafted onto roots (rootstock). The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded as part of research on disease control and selective breeding in apple production.
+        </aside>
+    </section>
+    <section class="hidden" id="article2">
+        <article class="main-article">
+            <img src="public/banana.jpg" />
+        </article>
+        <aside class="main-aside">
+            The apple is the pomaceous fruit of the apple tree, Malus domestica of the rose family (Rosaceae).
+            It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on deciduous trees which are large if grown from seed, but small if grafted onto roots (rootstock). The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded as part of research on disease control and selective breeding in apple production.
+        </aside>
+    </section>
+    <section class="hidden" id="article3">
+        <article class="main-article">
+            <img src="public/watermelon.jpg" />
+        </article>
+        <aside class="main-aside">
+            The apple is the pomaceous fruit of the apple tree, Malus domestica of the rose family (Rosaceae).
+            It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on deciduous trees which are large if grown from seed, but small if grafted onto roots (rootstock). The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded as part of research on disease control and selective breeding in apple production.
+        </aside>
+    </section>
+    <section class="hidden" id="article4">
+        <article class="main-article">
+            <img src="public/pomegranate.jpg" />
+        </article>
+        <aside class="main-aside">
+            The apple is the pomaceous fruit of the apple tree, Malus domestica of the rose family (Rosaceae).
+            It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on deciduous trees which are large if grown from seed, but small if grafted onto roots (rootstock). The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded as part of research on disease control and selective breeding in apple production.
+        </aside>
+    </section>
+    <hr style="margin:40px 0;"></div>
+<section>
+    <figure class="fig">
+        <img src="public/apple.jpg" class="figure-img" id="1">
+        <figcaption>It is one of the most widely cultivated tree fruits.</figcaption>
+    </figure>
+    <figure class="fig">
+        <img src="public/banana.jpg" class="figure-img" id="2">
+        <figcaption>It is one of the most widely cultivated tree fruits.</figcaption>
+    </figure>
+    <figure class="fig">
+        <img src="public/watermelon.jpg" class="figure-img" id="3">
+        <figcaption>It is one of the most widely cultivated tree fruits.</figcaption>
+    </figure>
+    <figure class="fig">
+        <img src="public/pomegranate.jpg" class="figure-img" id="4">
+        <figcaption>It is one of the most widely cultivated tree fruits.</figcaption>
+    </figure>
+</section>
+</body>
+</html>
